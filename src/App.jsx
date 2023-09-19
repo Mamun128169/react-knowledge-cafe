@@ -1,14 +1,18 @@
 import Header from './components/Header/Header'
 import './App.css'
 import Blogs from './components/Blogs/Blogs'
+import Bookmarks from './components/Bookmarks/Bookmarks'
 
 function App() {
 
   return (
-    <>
+    <section className='container mx-auto'>
       <Header></Header>
-      <Blogs></Blogs>
-    </>
+      <main className='md:flex'>
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </main>
+    </section>
   )
 }
 
